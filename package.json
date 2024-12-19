@@ -196,8 +196,5 @@
     "languages": "js",
     "type": "library",
     "version": "0.45.5"
-  },
-  "dependencies": {
-    "@react-native-community/cli": "^15.1.3"
   }
 }
