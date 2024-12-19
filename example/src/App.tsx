@@ -1,20 +1,12 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-kit-ui';
+import { View } from 'react-native';
+import TextComponent from '../../src/components/TextComponent';
 
-const result = multiply(3, 7);
-
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
+    <View>
+      <TextComponent text="Hello World" color="red" />
     </View>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
