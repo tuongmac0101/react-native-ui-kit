@@ -1,8 +1,20 @@
 /* eslint-disable react-native/no-inline-styles */
-import { Text, StyleSheet } from 'react-native';
+import { Text, StyleSheet, type StyleProp, type TextStyle } from 'react-native';
 import type { CTextCom } from './model';
 
-const TextComponent: CTextCom = (props) => {
+interface Props {
+  fontFamily?: string;
+  bold?: boolean;
+  text: string;
+  color?: string;
+  styleTxt?: StyleProp<TextStyle>;
+  underline?: boolean;
+  capitalize?: boolean;
+  lineThrough?: boolean;
+  isItalic?: boolean;
+}
+
+const TextComponent: CTextCom = (props: Props) => {
   const {
     text,
     color,
