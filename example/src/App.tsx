@@ -1,11 +1,11 @@
-import { View } from 'react-native';
-import TextComponent from '../../src/components/TextComponent';
+import ComponentScreen from 'example/screens';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const App = () => {
   return (
-    <View>
-      <TextComponent text="Hello World" color="red" />
-    </View>
+    <SafeAreaProvider>
+      <ComponentScreen />
+    </SafeAreaProvider>
   );
 };
 

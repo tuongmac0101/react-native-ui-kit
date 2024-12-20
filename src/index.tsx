@@ -1,3 +1,3 @@
-import TextComponent from './components/TextComponent';
+import TextComponent from './components/Text/TextComponent';
 
 export { TextComponent };
